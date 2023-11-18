@@ -7,8 +7,10 @@ import Link from "next/link";
 const PageHead = () => {
   const { title, codeUrl, childTitles, parentItem } = useFindTitle();
 
+  if (!title) return null;
+
   return (
-    <div>
+    <div className="mb-10">
       {parentItem && (
         <Link className="flex items-center gap-1 mb-2 text-blue-400 text-sm" href={parentItem.href}>
           <ArrowLeftCircleIcon className="w-4" />
@@ -28,7 +30,7 @@ const PageHead = () => {
         )}
       </h1>
       {childTitles && (
-        <ul className="mt-2 px-5 py-2 border-l-4 border-gray-300 rounded space-y-1 bg-gray-50">
+        <ul className="w-[calc(100%_-_4px)] ml-auto mt-2 px-4 py-2 border-l-4 border-gray-300 rounded space-y-1 bg-gray-50">
           {childTitles.map((item) => (
             <>
               <li className="text-sm list-disc list-inside" key={item.href}>

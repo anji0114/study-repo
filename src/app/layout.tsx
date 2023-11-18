@@ -17,7 +17,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <Header />
           <div className="p-10">
             <PageHead />
-            <div className="mt-10">{children}</div>
+            <div>{children}</div>
           </div>
         </QueryProvider>
       </body>
