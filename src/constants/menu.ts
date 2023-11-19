@@ -36,8 +36,8 @@ export const MENU_ITEMS = [
         href: "/react-query/fetch",
       },
       {
-        title: "CREATE METHOD",
-        href: "/react-query/create",
+        title: "POST METHOD",
+        href: "/react-query/post",
       },
       {
         title: "PATCH METHOD",
