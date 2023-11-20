@@ -32,13 +32,11 @@ const PageHead = () => {
       {childTitles && (
         <ul className="w-[calc(100%_-_4px)] ml-auto mt-2 px-4 py-2 border-l-4 border-gray-300 rounded space-y-1 bg-gray-50">
           {childTitles.map((item) => (
-            <>
-              <li className="text-sm list-disc list-inside" key={item.href}>
-                <Link className="underline underline-offset-2 hover:text-blue-500" href={item.href}>
-                  {item.title}
-                </Link>
-              </li>
-            </>
+            <li className="text-sm list-disc list-inside" key={item.href}>
+              <Link className="underline underline-offset-2 hover:text-blue-500" href={item.href}>
+                {item.title}
+              </Link>
+            </li>
           ))}
         </ul>
       )}
