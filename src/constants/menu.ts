@@ -21,7 +21,10 @@ export const MENU_ITEMS = [
   {
     title: "実践",
     href: "/practice",
-    children: [{ title: "parameterの検索", href: "/practice/search-params" }],
+    children: [
+      { title: "parameterの検索", href: "/practice/search-params" },
+      { title: "QRCode生成", href: "/practice/qrcode" },
+    ],
   },
   {
     title: "Styling",
