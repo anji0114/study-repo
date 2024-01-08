@@ -19,6 +19,11 @@ export const MENU_ITEMS = [
     href: "/basic",
   },
   {
+    title: "実践",
+    href: "/practice",
+    children: [{ title: "parameterの検索", href: "/practice/search-params" }],
+  },
+  {
     title: "Styling",
     href: "/styling",
     children: [
