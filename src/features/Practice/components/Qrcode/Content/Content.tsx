@@ -45,6 +45,12 @@ export const Content = () => {
           bgColor={"#fff"}
           fgColor={"#00b9c7"}
           level={"L"}
+          imageSettings={{
+            src: "/next.svg",
+            width: 32,
+            height: 32,
+            excavate: true,
+          }}
         />
       </div>
       <button className="border border-gray-400 px-6 py-2 text-sm rounded" onClick={onDownLoad}>

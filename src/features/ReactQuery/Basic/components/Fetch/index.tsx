@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import { QUERY_KEYS } from "@/features/ReactQuery/constants/queryKeys";
+import { QUERY_KEYS } from "@/features/ReactQuery/Basic/constants/queryKeys";
 import Link from "next/link";
 
 type TPost = {

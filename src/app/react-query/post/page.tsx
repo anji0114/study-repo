@@ -1,4 +1,4 @@
-import { Post } from "@/features/ReactQuery/components/Post";
+import { Post } from "@/features/ReactQuery/Basic/components/Post";
 
 const page = () => {
   return <Post />;

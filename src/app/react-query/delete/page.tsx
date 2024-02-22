@@ -1,4 +1,4 @@
-import { Delete } from "@/features/ReactQuery/components/Delete";
+import { Delete } from "@/features/ReactQuery/Basic/components/Delete";
 
 const page = () => {
   return <Delete />;

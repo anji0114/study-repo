@@ -1,4 +1,4 @@
-import { Fetch } from "@/features/ReactQuery/components/Fetch";
+import { Fetch } from "@/features/ReactQuery/Basic/components/Fetch";
 import React from "react";
 
 const page = () => {

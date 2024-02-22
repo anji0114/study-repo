@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { QUERY_KEYS } from "@/features/ReactQuery/constants/queryKeys";
+import { QUERY_KEYS } from "@/features/ReactQuery/Basic/constants/queryKeys";
 
 type TPost = {
   userId: number;

@@ -55,6 +55,10 @@ export const MENU_ITEMS = [
         title: "DELETE METHOD",
         href: "/react-query/delete",
       },
+      {
+        title: "Infinity Query",
+        href: "/react-query/infinity",
+      },
     ],
   },
   { title: "SWR", href: "/swr" },
