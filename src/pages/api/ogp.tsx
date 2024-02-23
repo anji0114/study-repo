@@ -6,10 +6,11 @@ const OGP = async (req: NextApiRequest, res: NextApiResponse) => {
   const viewport = { width: 1200, height: 630 };
 
   // ブラウザインスタンスの生成
-  const browser = await playwright.launchChromium();
+  const browser = await playwright.launchChromium({ headless: true });
   const page = await browser.newPage({ viewport });
 
   // HTMLをセットして、ページの読み込み完了を待つ
+
   await page.goto("https://gines.jp/users/anji", { waitUntil: "networkidle" });
 
   // スクリーンショットを取得する
