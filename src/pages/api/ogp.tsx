@@ -11,7 +11,7 @@ const OGP = async (req: NextApiRequest, res: NextApiResponse) => {
 
   // HTMLをセットして、ページの読み込み完了を待つ
 
-  await page.goto("https://gines.jp/users/anji", { waitUntil: "networkidle" });
+  await page.goto("https://next-portfolio-anji0114.vercel.app/", { waitUntil: "networkidle" });
 
   // スクリーンショットを取得する
   const image = await page.screenshot({ type: "png" });
