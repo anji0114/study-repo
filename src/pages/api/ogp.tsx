@@ -2,22 +2,50 @@ import { NextApiRequest, NextApiResponse } from "next";
 import ReactDOM from "react-dom/server";
 import * as playwright from "playwright-aws-lambda";
 
-const styles = `
-  html, body {
-    height: 100%;
-    display: grid;
-  }
-
-  h1 { margin: auto; color: red; }
-`;
-
 const Content = (props: { title: string }) => (
   <html>
-    <head>
-      <style>{styles}</style>
-    </head>
-    <body>
-      <h1>{props.title}</h1>
+    <head></head>
+    <body
+      style={{
+        boxSizing: "border-box",
+      }}
+    >
+      <div>
+        <h1
+          style={{
+            textAlign: "center",
+            fontWeight: "bold",
+            padding: "40px",
+            margin: "-10px -10px 0",
+            fontSize: "18px",
+            backgroundColor: "#fafafa",
+            backgroundImage: "url(http://localhost:3000/image/image.webp)",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+          }}
+        >
+          {props.title}
+        </h1>
+        <div style={{ padding: "20px 40px", lineHeight: "1.75" }}>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi recusandae veniam
+            dignissimos explicabo velit nemo, aspernatur, magni reprehenderit perspiciatis error
+            ratione iure perferendis exercitationem voluptas dolorum debitis expedita fugiat Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Animi recusandae veniam
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi recusandae veniam
+            dignissimos explicabo velit nemo, aspernatur, magni reprehenderit perspiciatis error
+            ratione iure perferendis exercitationem voluptas dolorum debitis expedita fugiat
+            adipisci!
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi recusandae veniam
+            dignissimos explicabo velit nemo, aspernatur, magni reprehenderit perspiciati ratione
+            iure perferendis exercitationem voluptas dolorum debitis expedita fugiat adipisci!
+          </p>
+        </div>
+      </div>
     </body>
   </html>
 );
@@ -31,7 +59,7 @@ const OGP = async (req: NextApiRequest, res: NextApiResponse) => {
   const page = await browser.newPage({ viewport });
 
   // HTMLの生成
-  const props = { title: "Hello OGP!" };
+  const props = { title: "タイトルが入ります！" };
   const markup = ReactDOM.renderToStaticMarkup(<Content {...props} />);
   const html = `<!doctype html>${markup}`;
 

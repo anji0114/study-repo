@@ -1,9 +1,6 @@
 import "@/styles/globals.css";
 import { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-
-type TOgpPageProps = {};
 
 const OGP: NextPage<{ title: string; ogImageUrl: string }> = ({ title, ogImageUrl }) => {
   return (
@@ -15,7 +12,6 @@ const OGP: NextPage<{ title: string; ogImageUrl: string }> = ({ title, ogImageUr
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:image:width" content={String(1200)} />
         <meta property="og:image:height" content={String(630)} />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:image" content={ogImageUrl} />
@@ -52,7 +48,7 @@ export const getServerSideProps = () => {
   return {
     props: {
       title: "タイトルが入ります！",
-      ogpImage: `https://study-repo-eta.vercel.app/api/ogp`,
+      ogImageUrl: `https://study-repo-eta.vercel.app/api/ogp`,
     },
   };
 };
