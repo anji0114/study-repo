@@ -24,7 +24,7 @@ const Content = (props: { title: string }) => (
             backgroundSize: "cover",
           }}
         >
-          {props.title}
+          タイトルが入ります
         </h1>
         <div style={{ padding: "20px 40px", lineHeight: "1.75" }}>
           <p>
