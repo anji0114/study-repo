@@ -58,13 +58,8 @@ const OGP = async (req: NextApiRequest, res: NextApiResponse) => {
   const browser = await playwright.launchChromium();
   const page = await browser.newPage({ viewport });
 
-  // HTMLの生成
-  const props = { title: "タイトルが入ります！" };
-  const markup = ReactDOM.renderToStaticMarkup(<Content {...props} />);
-  const html = `<!doctype html>${markup}`;
-
   // HTMLをセットして、ページの読み込み完了を待つ
-  await page.setContent(html, { waitUntil: "domcontentloaded" });
+  await page.goto("https://study-repo-eta.vercel.app/ogp", { waitUntil: "networkidle" });
 
   // スクリーンショットを取得する
   const image = await page.screenshot({ type: "png" });
