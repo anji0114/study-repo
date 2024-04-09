@@ -1,5 +1,5 @@
 import axios from "axios";
-import { TUser } from "@/features/Practice/types/user";
+import { TUser } from "@/features/Practice/SearchParams/types/user";
 import { TApiResponse } from "@/types/api";
 
 export const fetchUsersApi = async (params: string | undefined): Promise<TUser[]> => {

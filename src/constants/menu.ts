@@ -24,6 +24,7 @@ export const MENU_ITEMS = [
     children: [
       { title: "parameterの検索", href: "/practice/search-params" },
       { title: "QRCode生成", href: "/practice/qrcode" },
+      { title: "ファイルの取り扱い", href: "/practice/file" },
     ],
   },
   {
