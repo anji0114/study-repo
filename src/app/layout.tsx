@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import { QueryProvider } from "@/Providers/QueryProvider";
+import { QueryProvider } from "@/components/providers/QueryProvider";
 import { Header } from "@/components/layouts/Header";
 import PageHead from "@/components/common/PageHead";
 
