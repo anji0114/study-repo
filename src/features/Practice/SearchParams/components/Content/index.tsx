@@ -1,9 +1,9 @@
 "use client";
-import { Sort } from "@/features/Practice/components/SearchParams/Sort";
-import { List } from "@/features/Practice/components/SearchParams/List";
-import { useQuery } from "@tanstack/react-query";
-import { fetchUsersApi } from "@/features/Practice/services/fetchUsersApi";
+import { Sort } from "@/features/Practice/SearchParams/components/Sort";
+import { List } from "@/features/Practice/SearchParams/components/List";
+import { fetchUsersApi } from "@/features/Practice/SearchParams/services/fetchUsersApi";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 export const SearchContent = () => {
   const [keyword, setKeyword] = useState("");

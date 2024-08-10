@@ -1,4 +1,4 @@
-import { SearchContent } from "@/features/Practice/components/SearchParams/Content";
+import { SearchContent } from "@/features/Practice/SearchParams/components/Content";
 
 const page = () => {
   return (

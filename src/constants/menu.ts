@@ -24,17 +24,10 @@ export const MENU_ITEMS = [
     children: [
       { title: "parameterの検索", href: "/practice/search-params" },
       { title: "QRCode生成", href: "/practice/qrcode" },
+      { title: "ファイルの取り扱い", href: "/practice/file" },
     ],
   },
-  {
-    title: "Styling",
-    href: "/styling",
-    children: [
-      { title: "Tailwind css", href: "/styling/tailwind-css" },
-      { title: "styled-components", href: "/styling/styled-components" },
-      { title: "MUI", href: "/styling/mui" },
-    ],
-  },
+
   {
     title: "React Query",
     href: "/react-query",
@@ -61,8 +54,6 @@ export const MENU_ITEMS = [
       },
     ],
   },
-  { title: "SWR", href: "/swr" },
-  { title: "React hooks form", href: "/react-hooks-form" },
   {
     title: "状態管理",
     href: "/state-management",
@@ -74,20 +65,17 @@ export const MENU_ITEMS = [
     ],
   },
   {
-    title: "Hooks",
-    href: "/hooks",
+    title: "Rendering",
+    href: "/rendering",
     children: [
-      { title: "Generate", href: "/a" },
-      { title: "Migration", href: "/b" },
+      { title: "ssr", href: "/rendering/ssr" },
+      { title: "ssg", href: "/rendering/ssg" },
+      { title: "isr", href: "/rendering/isr" },
     ],
   },
   {
-    title: "Test",
-    href: "/testing",
-    children: [
-      { title: "Jest", href: "/a" },
-      { title: "Testing Library", href: "/b" },
-      { title: "Testing Library", href: "/c" },
-    ],
+    title: "テスト",
+    href: "/front-test",
+    children: [{ title: "ローディングテスト", href: "/front-test/loading-test" }],
   },
 ] as TMenuItem[];

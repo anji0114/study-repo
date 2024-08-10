@@ -1,4 +1,4 @@
-import { TUser } from "@/features/Practice/types/user";
+import { TUser } from "@/features/Practice/SearchParams/types/user";
 import React, { FC } from "react";
 
 type TListProps = {

@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import { QueryProvider } from "@/Providers/QueryProvider";
-import { Header } from "@/app/components/Header";
-import PageHead from "@/components/commons/PageHead";
+import { QueryProvider } from "@/components/providers/QueryProvider";
+import { Header } from "@/components/layouts/Header";
+import PageHead from "@/components/common/PageHead";
 
 export const metadata: Metadata = {
   title: "STUDY FRONTEND",

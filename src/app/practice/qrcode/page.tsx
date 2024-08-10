@@ -1,4 +1,4 @@
-import { Content } from "@/features/Practice/components/Qrcode/Content/Content";
+import { Content } from "@/features/Practice/Qrcode/components/Content";
 
 const page = () => {
   return (
